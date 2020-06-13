@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>NORIYUKI'S PORTFOLIO</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="frame">
+    <span class="top"></span>
+    <span class="left"></span>
+    <span class="bottom"></span>
+    <span class="right"></span>
+  </div>
+  <div class="l-wrap">
+    <section id="home" class="l-section l-section-top">
+      <div class="l-container-center">
+        <h1 class="heading-top">
+          <span class="d_rainbow">KOMATSU NORIYUKI</span>
+
+
+          <span class="d_rainbow" id="red"><br> PORTFOLIO</span></h1>
+        <div class="subtitle">DESIGN & CORDING</div>
+      </div>
+      <div class="arrow"></div>
+    </section>
+    <section id="about" class="l-section l-section">
+      <div class="l-container">
+      <h1 class="heading">ABOUT</h1>
+      <div class="image"><img src="assets/images/koma2.png" alt=""></div>
+      <h2>KOMATSU NORIYUKi</h2><br>
+        <b><p>1995年2月23日生まれ</p><br>
+          <p>血液型B型</p><br>
+          <p>実用英語技能検定準一級</p><br>
+          <p>漢語水平考試 5級（中国語）</p><br></b>
+      </div>
+    </section>
+    <section id="works" class="l-section l-section">
+      <h1 class="heading">WORKS</h1>
+      <div class="l-container">
+        <div class="dammy-image"><span class="p_imgs"><a href=""><img src="images/" alt="架空企業ウェブサイト" width="100px"></a></span></div>
+        <div class="dammy-image"><span class="p_imgs"><a href=""><img src="./assets/images/museum.jpg" alt="美術館バナー"></a></span></div>
+        <div class="dammy-image"><span class="p_imgs"><a href=""><img src="images/" alt="ピクトグラム" width="100px"></a></span></div>
+      </div>
+    </section>
+    <section id="contact" class="l-section">
+      <h1 class="heading">CONTACT</h1>
+      <div class="l-container">
+        <form class="form" action="">
+          <input class="form-name" type="text" placeholder="Name">
+          <input class="form-mail" type="text" placeholder="Adress">
+          <textarea class="form-conten" name="content" placeholder="Feel free to ask me anything"></textarea>
+          <button class="form-button">SUBMIT</button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <div class="menu" id="js-popout"></div>
+  <div class="panel panel-slide-right" id="js-popout-panel">
+    <div class="panel-inner">
+      <nav class="l-nav">
+        <ul class="nav">
+          <li class="nav-item"><a href="#home">HOME</a></li>
+          <li class="nav-item"><a href="#about">ABOUT</a></li>
+          <li class="nav-item"><a href="#works">WORKS</a></li>
+          <li class="nav-item"><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="close" id="js-popout-close"></div>
+    </div>
+  </div>
+  <footer>
+    <small><p>&copy; 2020 NORIKOMA2 All Rights Reserved</p></small>
+  </footer>
+
+  <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+  <![endif]-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script>
+  $(window).scroll(function(){
+  $(".passing").each(function(){
+    var imgPos = $(this).offset().top;    
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll > imgPos - windowHeight + windowHeight / 4){
+      $(this).addClass('move');
+    }
+  });
+});</script>
+</body>
+</html>
