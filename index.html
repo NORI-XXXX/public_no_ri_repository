@@ -37,13 +37,18 @@
           <p>実用英語技能検定準一級</p><br>
           <p>漢語水平考試 5級（中国語）</p><br></b>
       </div>
-    </section>
+    </section
     <section id="works" class="l-section l-section">
       <h1 class="heading">WORKS</h1>
       <div class="l-container">
-        <div class="dammy-image"><span class="p_imgs"><a href=""><img src="images/" alt="架空企業ウェブサイト" width="100px"></a></span></div>
-        <div class="dammy-image"><span class="p_imgs"><a href=""><img src="./assets/images/museum.jpg" alt="美術館バナー"></a></span></div>
-        <div class="dammy-image"><span class="p_imgs"><a href=""><img src="images/" alt="ピクトグラム" width="100px"></a></span></div>
+        <figure><a href="#"><img src="./assets/images/mockup.jpg" alt="架空企業ウェブサイト"></a>
+        <figcaption>架空の水族館サイト"なんかいマリンパーク"</figcaption>
+      </figure><br>
+
+        <figure><a href="#"><img src="./assets/images/mockup.png" alt="美術館バナー"></a>
+        <figcaption>自主制作バナー</figcaption>
+        </figure>
+        <figure><a href="#"><img src="images/" alt="ピクトグラム"></a></figure>
       </div>
     </section>
     <section id="contact" class="l-section">
@@ -84,7 +89,7 @@
   <script>
   $(window).scroll(function(){
   $(".passing").each(function(){
-    var imgPos = $(this).offset().top;    
+    var imgPos = $(this).offset().top;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll > imgPos - windowHeight + windowHeight / 4){
